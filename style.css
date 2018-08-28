@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body
+  {
+      font-size: 18px;
+      font-family: Arial, "Helvetica Neue" ,Helvetica, sans-serif;
+      line-height: 35px;
+      color: #777;
+      background: url("../images/concrete-texture.png");
+  }
+
+  .container
+  {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      clear: both;
+  }
+
+h1,h3,p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+
+h1,h3,p
+{
+    margin-bottom: 15px;
+}
+
+p:last-child
+{
+margin-bottom:0;
+}
+
+h1,h3,p
+{
+    margin-top: 15px;
+}
+
+#masterhead
+{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+#logo
+{
+    background: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+ 
+
+  #masterhead
+  {
+    background: #fff;
+    border-color: #ccc;
+    border-bottom: 2px solid #ccc;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    position: fixed;
+    overflow: auto;
+  }
+
+  nav
+  {
+      float: right;
+      margin-top: 20px;
+  }
+
+  nav a
+   {
+color:#999;
+margin-left: 15px;
+padding-left: 15px;
+display: inline-block;
+border-left: 1px solid #efefef;
+line-height: 15px;
+text-decoration: none;
+  }
+
+nav a:first-child 
+{
+    border-left: 0 none;
+}
+
+footer
+{
+    padding: 30px 0;
+    background: #666;
+    color: #fff;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    font-size: 14px;
+    text-align: center;
+    height: 100px;
+    color: #ccc;
+}
+
+
+h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eee;
+  }
+  
+
+#main-container {
+  padding-top: 130px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/*porfolio*/
+
+.projects {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .projects:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .projects img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+.projects h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  /* contact page */
+
+#contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+
+  #header {
+    max-width: 640px;
+    width: 100%; 
+}
+  
+  /*Media Queries*/
+
+  @media screen and (max-width: 980px) {
+   .container 
+   { padding: 0 20px;
+    max-width: 768px;
+  }
+
+#main-container {
+  padding-top: 130px;
+}
+#main-section {
+  max-width: 420px;
+}
+.project{
+  width: 100%;
+}
+.auth-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+  }
+  @media screen and (max-width: 768px){
+  .main-container{
+    max-width: 100px;
+  }
+  #main-container{
+    overflow: auto;
+  }
+  .projects{
+    width: 40%;
+    margin-bottom:10px;
+  }
+  .projects:nth-child(even){
+    margin-right: 0px;
+  }
+  .projects:nth-child(odd){
+    float:right;
+  }
+.auth-image{
+  width: 50%;
+}
+  }
+  @media screen and (max-width: 640px) {
+
+    #main-container{
+      padding: 0px;
+    }
+
+  #masterhead {
+ position: static;
+ margin-bottom: 20px;
+  }
+  header.container {
+    padding: 0px;
+  }
+  #logo .projects .auth-image{
+    width:100%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  nav a{
+    padding-left: 0;
+    width: 30%;
+    margin-left: 0;
+  }
+  }
+
