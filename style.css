@@ -250,6 +250,8 @@ h3, h2 {
   margin-bottom: 20px;
 }
   }
+  /* Medium/Tablet Screen*/
+
   @media screen and (max-width: 768px){
   .main-container{
     max-width: 100px;
@@ -270,6 +272,8 @@ h3, h2 {
 .auth-image{
   width: 50%;
 }
+
+/*Small/Phone Screen*/
   }
   @media screen and (max-width: 640px) {
 
